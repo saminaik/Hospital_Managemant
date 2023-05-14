@@ -16,7 +16,7 @@ export default function PatientQuiries() {
   const loadUsers = async () => {
     try {
       const id = location.state.id.id.id;
-      const url = `http://localhost:8081/api/patients/get/quiries/29`;
+      const url = `http://localhost:8081/api/patients/get/quiries/$ {id}`;
       const result = await axios.get(url, { headers: {"Authorization" : `Bearer ${location.state.id.id.token}`} })
       setUsers(result.data);
      

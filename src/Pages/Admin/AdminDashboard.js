@@ -7,7 +7,7 @@ export default function AdminDashboard() {
     navigate("/getPatient", { state: { id: location.state } });
   }
   function seeDoctors() {
-    console.log("hello");
+    
     navigate("/getDoctors", { state: { id: location.state } });
   }
   function addDoctors() {

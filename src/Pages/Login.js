@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Link,useNavigate } from 'react-router-dom'
+import img1 from '../Images/img1.jpeg';
 import Swal from 'sweetalert2'
 import axios from "axios";
 
@@ -69,8 +70,8 @@ export default function Login() {
                 <div className="col-lg-6">
                   <div className="card-body p-md-5 mx-md-4">
 
-                    <div className="text-center">
-                      <img src="./Images/photo1.jpeg" alt="" style={{ width: "185px" }} />
+                    <div className="text-center"> 
+                     
                       <h4 className="mt-1 mb-5 pb-1">KHYBER HOSPITAL</h4>
                     </div>
 
@@ -102,10 +103,7 @@ export default function Login() {
                   </div>
                 </div>
                 <div className="col-lg-6 d-flex align-items-center gradient-custom-2">
-                  <div className="text-white px-3 py-4 p-md-5 mx-md-4">
-                    <h4 className="mb-4">We are more than just a company</h4>
-                    <p className="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
+                <img src={img1} alt="" style={{ width: "400px", height: "550px"  }} />
                 </div>
               </div>
             </div>

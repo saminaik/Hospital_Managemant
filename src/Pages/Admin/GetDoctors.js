@@ -56,7 +56,7 @@ export default function GetDoctors() {
               <th scope="col">Specialization</th>
               <th scope="col">Email</th>
               <th scope="col">Timing</th>
-              <th scope="col">Action</th>
+             
             </tr>
           </thead>
           <tbody>
@@ -71,14 +71,7 @@ export default function GetDoctors() {
                 <td>{user.email}</td>
                 <td>{user.timing}</td>
 
-                <td>
-                  <Button
-                    className="btn btn-danger btn-lg btn-block"
-                    onClick={() => handleDoctorDelete(user.id)}
-                  >
-                    Delete Doctor
-                  </Button>
-                </td>
+              
               </tr>
             ))}
           </tbody>

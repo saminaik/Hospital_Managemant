@@ -19,6 +19,11 @@ export default function AdminDashboard() {
   function seeQuery(){
     navigate("/replyQuery", { state: { id: location.state } });
   }
+  function logout() {
+    // Perform logout logic here, such as clearing session, removing tokens, etc.
+    // After the logout logic, navigate to the login page or any other desired page.
+    navigate("/"); // Replace "/login" with the actual path to your login page.
+  }
   return (
     <React.Fragment>
       <div>
@@ -50,11 +55,18 @@ export default function AdminDashboard() {
       </button>
       <button
         type="button"
-        className="btn btn-danger btn-lg btn-block"
+        className="btn btn-dark btn-lg btn-block"
         onClick={() => removeDoctors()}
       >
         Remove Doctor{" "}
       </button>
+      <button
+      type="button"
+      className="btn btn-danger btn-lg btn-block"
+      onClick={() => logout()}
+    >
+      Logout
+    </button>
     </React.Fragment>
   );
 }

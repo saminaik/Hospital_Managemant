@@ -42,7 +42,7 @@ export default function PatientSeeAppointment() {
                             
                             <tr>
                                 <th scope="row" key={index}>{index+1}</th>
-                                <td>{user.id98767890-43544}</td>
+                                <td>{user.id}</td>
                                 <td>{user.date}</td>
                                 <td>{user.status}</td>
 

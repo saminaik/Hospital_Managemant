@@ -9,6 +9,9 @@ export default function DoctorDashboard() {
   function priscription(){
     navigate("/precription", { state: { id: location.state } });
   }
+  function logout() {
+    navigate("/"); // Replace "/login" with the actual path to your login page.
+  }
   return (
     <React.Fragment>
       <div>
@@ -27,6 +30,13 @@ export default function DoctorDashboard() {
         onClick={() => priscription()}
       >
        Give prescription{" "}
+      </button>
+      <button
+        type="button"
+        className="btn btn-danger btn-lg btn-block"
+        onClick={() => logout()}
+      >
+        Logout
       </button>
     </React.Fragment>
   );
